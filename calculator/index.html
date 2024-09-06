@@ -1,0 +1,101 @@
+<head>
+    <style>
+      .main{       text-align: center;
+        font-style: Courier;
+      }
+      .ans{
+        font-size: 30px;
+        color:white;
+        margin: 0;
+       padding: 0;
+        align-items: center;
+        width: 350px;
+        height: 80px;
+        margin-left: 650px;
+        margin-top: 50px;
+        margin-bottom: 0;
+        background-color: #a5a391 ;
+        font-style: Courier;
+
+      }
+      .div1{
+        align-items: center;
+        height: 420px;
+        width: 350px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns:repeat(4,1fr);
+        margin: 0;
+        margin-left: 650px;
+        background-color: black;
+        margin-top: 0;
+        border: 0;
+         border-radius: 0px
+      }
+      .b1,.b11,.b12,.b13{
+        cursor: pointer;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        border: 0;
+        background-color: #c0c0c0	;
+        font-size: 25px;
+
+      }
+      .b12,.b13{
+        margin-top: 20px;
+        border: 0;
+        font-size: 25px;
+
+
+      }
+      .b11{
+        margin-left: 15px;
+        background-color:#FFA500;
+        font-size: 25px;
+      }
+      .b13{
+        margin-left: 15px;
+        font-size: 25px;
+      
+        background-color: #FFA500;
+      }
+      .cal{
+         margin-left: 120px;
+         font-size: 45px;
+        margin-bottom: 10px;
+
+      }
+    </style>
+
+  
+</head>
+
+
+  <body>
+   <div class="main">
+    <h3  class="cal">CALCULATOR</h3>
+    <h3 id="ans" class="ans"></h3>
+    <div class="div1">
+     <button class="b13" onclick="operator('+')">+</button>
+     <button class="b12" onclick="current(0)">0</button>
+     <button class="b12"  onclick="current(1)">1</button>
+     <button class="b12"  onclick="current(2)">2</button>
+     <button class="b11" onclick="operator('-')">-</button>
+     <button class="b1"  onclick="current(3)">3</button>
+     <button class="b1"  onclick="current(4)">4</button>
+     <button class="b1"  onclick="current(5)">5</button>
+     <button class="b11" onclick="operator('*')">x</button>
+     <button class="b1"  onclick="current(6)">6</button>
+     <button class="b1"  onclick="current(7)">7</button>
+     <button class="b1"  onclick="current(8)">8</button>
+     <button class="b11" onclick="operator('/')">/</button>
+     <button class="b1"  onclick="current(9)">9</button>
+     <button class="b1">.</button>
+     <button class="b1" onclick="calculate()">=</button>
+     <button class="b11" onclick="clear1()">C</button>
+     
+    </div>
+   </div>
+   <script src="logic.js"></script>
+  </body>
